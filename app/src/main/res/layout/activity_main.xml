@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="LocationFinder"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:hint="Enter Latitude"
+        android:inputType="numberSigned|numberDecimal"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/et_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52dp"
+        android:hint="Enter Longitude"
+        android:inputType="numberSigned|numberDecimal"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/bt_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIND ADDRESS"/>
+
+    <ListView
+        android:id="@+id/list_result"
+        android:layout_width="match_parent"
+        android:layout_height="145dp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW AND UPDATE" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH LATITUDE AND LONGITUDE" />
+
+
+</LinearLayout>
