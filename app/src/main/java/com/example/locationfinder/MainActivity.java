@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//Variables
         final EditText latValue = (EditText)findViewById(R.id.et_lat);
         final EditText longValue = (EditText)findViewById(R.id.et_long);
         Button findBtn = (Button)findViewById(R.id.bt_find);
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         final ListView resultList = (ListView)findViewById(R.id.list_result);
         geocoder = new Geocoder(this);
         dbHelper = new DatabaseHelper(this);
-
+//Finds the address and also saves all the values to the Database
         findBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
